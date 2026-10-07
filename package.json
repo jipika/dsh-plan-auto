@@ -1,8 +1,8 @@
 {
   "name": "dsh-plan-auto",
   "icon": "./assets/icon.svg",
-  "version": "0.1.0",
-  "description": "enter_plan_mode 工具：把官方 /plan 命令包成模型可调用的 host 工具，复杂任务时 agent 自主进入 session plan mode，经 exit_plan_mode 提交计划等批准。",
+  "version": "0.2.0",
+  "description": "enter_plan_mode 工具 + plan review 无人应答自动同意：复杂任务时 agent 自主进 plan mode，exit_plan_mode 提交计划后 GUI 出 Plan review 卡片，超时（默认 180s）无应答自动按 Approve 执行。",
   "license": "MIT",
   "type": "module",
   "main": "./lib/index.js",

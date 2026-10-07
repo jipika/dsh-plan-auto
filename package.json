@@ -31,8 +31,5 @@
   "bugs": {
     "url": "https://github.com/jipika/dsh-plan-auto/issues"
   },
-  "homepage": "https://github.com/jipika/dsh-plan-auto#readme",
-  "dsh": {
-    "client": false
-  }
+  "homepage": "https://github.com/jipika/dsh-plan-auto#readme"
 }

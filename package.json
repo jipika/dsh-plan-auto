@@ -1,0 +1,38 @@
+{
+  "name": "dsh-plan-auto",
+  "icon": "./assets/icon.svg",
+  "version": "0.1.0",
+  "description": "enter_plan_mode 工具：把官方 /plan 命令包成模型可调用的 host 工具，复杂任务时 agent 自主进入 session plan mode，经 exit_plan_mode 提交计划等批准。",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plan-mode",
+    "planning",
+    "tool"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jipika/dsh-plan-auto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jipika/dsh-plan-auto/issues"
+  },
+  "homepage": "https://github.com/jipika/dsh-plan-auto#readme",
+  "dsh": {
+    "client": false
+  }
+}

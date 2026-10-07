@@ -1,13 +1,14 @@
 {
   "name": "dsh-plan-auto",
   "icon": "./assets/icon.svg",
-  "version": "0.2.0",
-  "description": "enter_plan_mode 工具 + plan review 无人应答自动同意：复杂任务时 agent 自主进 plan mode，exit_plan_mode 提交计划后 GUI 出 Plan review 卡片，超时（默认 180s）无应答自动按 Approve 执行。",
+  "version": "0.2.1",
+  "description": "enter_plan_mode 工具 + plan review 无人应答自动同意：复杂任务时 agent 自主进 plan mode，exit_plan_mode 提交计划后 GUI 出 Plan review 卡片，3 分钟无人应答由 client 半边自动点「同意执行」（host 侧 +30s 兜底）。",
   "license": "MIT",
   "type": "module",
   "main": "./lib/index.js",
   "exports": {
     ".": "./lib/index.js",
+    "./client": "./lib/client.js",
     "./package.json": "./package.json"
   },
   "files": [
@@ -31,5 +32,10 @@
   "bugs": {
     "url": "https://github.com/jipika/dsh-plan-auto/issues"
   },
-  "homepage": "https://github.com/jipika/dsh-plan-auto#readme"
+  "homepage": "https://github.com/jipika/dsh-plan-auto#readme",
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  }
 }

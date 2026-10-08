@@ -1,7 +1,7 @@
 {
   "name": "dsh-plan-auto",
   "icon": "./assets/icon.svg",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "enter_plan_mode 工具 + plan review 无人应答自动同意：复杂任务时 agent 自主进 plan mode，exit_plan_mode 提交计划后 GUI 出 Plan review 卡片，3 分钟无人应答由 client 半边自动点「同意执行」（host 侧 +30s 兜底）。",
   "license": "MIT",
   "type": "module",
